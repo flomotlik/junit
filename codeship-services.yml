@@ -1,0 +1,4 @@
+app:
+  build:
+    image: flomotlik/junit
+    dockerfile_path: Dockerfile
