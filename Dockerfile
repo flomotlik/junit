@@ -5,8 +5,6 @@ WORKDIR /app
 
 ADD pom.xml /app/pom.xml
 
-#RUN mvn dependency:copy-dependencies
-
-RUN mvn process-sources
+RUN mvn dependency:copy-dependencies
 
 ADD . /app
