@@ -1,8 +1,8 @@
 - type: parallel
   steps:
   - service: app
-    command: mvn verify
+    command: mvn verify -B
   - service: app
-    command: mvn javadoc:javadoc
+    command: mvn javadoc:javadoc -B
   - service: app
-    command: mvn site:site
+    command: mvn site:site -B
